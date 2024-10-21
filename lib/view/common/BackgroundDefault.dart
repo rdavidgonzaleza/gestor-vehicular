@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class BackgroundDefault extends StatelessWidget { //Fondo por defecto de la app
   const BackgroundDefault({
     super.key,
@@ -11,9 +10,9 @@ class BackgroundDefault extends StatelessWidget { //Fondo por defecto de la app
     return Stack(
       children: [
         Positioned(
-          right: 10,
-          top: 10,
-          child: Image.asset("icon.png", width: 100.0, height: 100.0)
+          right: 5,
+          top: 5,
+          child: Image.asset("logo.jpg", width: 100.0, height: 100.0)
 
         ),
         Align(

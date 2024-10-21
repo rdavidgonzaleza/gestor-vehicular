@@ -6,14 +6,19 @@ class InputGeneric extends StatelessWidget {
       super.key,
       this.hintText,
       this.controller,
+      this.margin,
     });
   final String? hintText;
   final String? controller;
+  final double? margin;
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(hintText: hintText ?? "Usuario"), 
-      controller: TextEditingController.fromValue(TextEditingValue())
+    return Container(
+      margin: EdgeInsets.all(margin ?? 15.0),
+      child: TextField(
+        decoration: InputDecoration(hintText: hintText ?? "Usuario", ), 
+        controller: TextEditingController.fromValue(TextEditingValue())
+      ),
     );
   }
 } 

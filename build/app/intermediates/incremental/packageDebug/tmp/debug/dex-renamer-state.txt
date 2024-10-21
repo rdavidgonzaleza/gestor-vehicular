@@ -1,0 +1,13 @@
+#Sun Oct 20 17:31:59 COT 2024
+base.0=C\:\\Users\\rdavi\\OneDrive\\Documentos\\flutter_test\\gestor-vehicular\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\rdavi\\OneDrive\\Documentos\\flutter_test\\gestor-vehicular\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\rdavi\\OneDrive\\Documentos\\flutter_test\\gestor-vehicular\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.3=C\:\\Users\\rdavi\\OneDrive\\Documentos\\flutter_test\\gestor-vehicular\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=1/classes.dex
+path.3=6/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex

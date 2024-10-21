@@ -1,0 +1,134 @@
+{
+   "checksum": "fb6ef7abb087378b4a8569048b265f54",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13321657527720155",
+            "date_last_used": "13331232626434413",
+            "guid": "cc30d2fc-3cb8-434e-ae8c-eb71bd61ed4b",
+            "id": "7",
+            "name": "Clases",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://classroom.google.com/u/2/",
+            "visit_count": 0
+         }, {
+            "date_added": "13323558079459367",
+            "date_last_used": "13334249036251239",
+            "guid": "e83b34d2-662e-42f9-aa23-1c5ac173e751",
+            "id": "8",
+            "name": "Mi unidad - Google Drive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/u/2/my-drive",
+            "visit_count": 0
+         }, {
+            "date_added": "13323581268067863",
+            "date_last_used": "0",
+            "guid": "57ac1e80-3b5e-4da2-a845-f83d13cca9ae",
+            "id": "9",
+            "name": "Word | Microsoft 365",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.office.com/launch/word?ui=es-ES&rs=ES&auth=1",
+            "visit_count": 0
+         }, {
+            "date_added": "13324312429128641",
+            "date_last_used": "0",
+            "guid": "53eedffc-98ce-45e4-b935-3984a48e7a91",
+            "id": "10",
+            "name": "DALL·E",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://labs.openai.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13324312437603388",
+            "date_last_used": "13326171812913602",
+            "guid": "95892bd0-52a8-40a1-a9dc-c696807135e3",
+            "id": "11",
+            "name": "ChatGPT",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chat.openai.com/chat",
+            "visit_count": 0
+         }, {
+            "date_added": "13363701850154143",
+            "date_last_used": "0",
+            "guid": "b0854ed1-adae-4dd5-ad7a-cdd278fd021c",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Brawl Stars Championship 2024",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://event.supercell.com/brawlstars/es",
+            "visit_count": 0
+         }, {
+            "date_added": "13365809327023886",
+            "date_last_used": "0",
+            "guid": "55c720d2-eb9f-4d37-a954-fa91a766ba61",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Catálogo de Microsoft Update",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.catalog.update.microsoft.com/home.aspx",
+            "visit_count": 0
+         } ],
+         "date_added": "13373934025554903",
+         "date_last_used": "0",
+         "date_modified": "13365809327023886",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13373934025554915",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13326239658712199",
+            "date_last_used": "0",
+            "guid": "e1ccf352-5ceb-4100-83b7-119449d604c6",
+            "id": "6",
+            "name": "Calculus Vol. 1 Tom M Apostol : Free Download, Borrow, and Streaming : Internet Archive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://archive.org/details/CalculusTomMApostol/Calculus%20vol.%201%20-%20Tom%20M%20Apostol/mode/1up",
+            "visit_count": 0
+         } ],
+         "date_added": "13373934025554917",
+         "date_last_used": "0",
+         "date_modified": "13326239658712199",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCPnxde6RAQAAEgAqGGtnZFJuYzkyRXBIZDUzUjl5bGY3MGc9PUgDoAYHEq0BCAwSqAEKHGN4cDdoVVRiNHd5VHRXUDFuSkc2d3luMEswQT0SJGIwODU0ZWQxLWFkYWUtNGRkNS1hZDdhLWNkZDI3OGZkMDIxYxgAIAAoADDkk/XPhDI4nOr0z4QyQJzq9M+EMkocZ29iRksrTkVLNkdNWEpORjdpZmYxMkdwNnRRPVofIh37NlVDRFUwQXVTODFBRlAwdmV5c05NUnFsZUhjPWV22jmpwj4CYAUSrQEICxKoAQocc3VDUFU4VG1xWkJhaHpVK2Q2dFpEWVZMZDhvPRIkOTU4OTJiZDAtNTJhOC00MGExLWE5ZGMtYzY5NjgwNzEzNWUzGAAgACgAMLiUiIGaMjjN/cnx8TBAzf3J8fEwShxvWUVUeXpON2o5Y3lGc0xGT2lUdXNtcWFFeUk9Wh8iHfcwaGtZQkRZNVYrTXNxN2NKZkhETEVSYjRHV289Zd/PziLCPgJgBRKtAQgKEqgBChw5bUNCVHYxKzlyM1M0RG1jYjRkUGhaSTg0aUE9EiQ1M2VlZGZmYy05OGNlLTQ1ZTQtYjkzNS0zOTg0YTQ4ZTdhOTEYACAAKAAw1qO6tvsxOOa7yfHxMEDmu8nx8TBKHEFOQ3NFMnBBNDJsam5RK0hRYkQ4dDBzWU9HYz1aHyId70kvRDVyc2poNDZLZVlESDI5QWFtSWdLb3dDcz1lNhSegcI+AmAFEq0BCAgSqAEKHGE4ZlNNeXpQQmFVYXY1dUhEWmRQLzJUWVlSQT0SJGU4M2IzNGQyLTY2MmUtNDJmOS1hYTIzLTFjNWFjMTczZTc1MRgAIAAoADD449fznjI43K3kie8wQNyt5InvMEocZzRwaThBUTdhV2Z5VGtXTzhFQ3QzeFpkMWgwPVofIh28RitVVHJwVjhXYWxDcndSUmUrb0NaRnozc29nPWUQMP/kwj4CYAUSjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkNDQxYmIzMzgtMTI0Yi01YzIxLWIwNDMtZTgzMjE4MTBmODNiGAAgACgAMNfww/HHMDid88PxxzBAnfPD8ccwShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAEqwBCAcSpwEKHHhvVGVkZm9WcHVUNXpXR3pya005UE1sUEMxcz0SJGNjMzBkMmZjLTNjYjgtNDM0ZS1hZThjLWViNzFiZDYxZWQ0YhgAIAAoADDAnZWBmjI41JXG/+cwQNSVxv/nMEoccDRwVEl3RERHNVNXNjNzWThNZjNaMTRmMlJjPVoeIhx4cGhLc2psVmRuT1llNEJqcFBnTFZYMStCS1k9ZQRHWPnCPgJgBRKtAQgJEqgBChx0TWZiRDlJK3YwNHkvNTY2eTFOcWFFWndzT3M9EiQ1N2FjMWU4MC0zYjVlLTRkYTItYTg0NS1mODNkMTNjY2E5YWUYACAAKAAw/ZPr6d0xON7U65TvMEDe1OuU7zBKHFBWZkZpbzJ2eXNheXFPSEVZQkh0YUNXNTFpRT1aHyId3jNETlhaL3NqSWhNQjVMZUFCMnpXMXpwQUVqZz1lyjRcP8I+AmAFEo4BCAESiQEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDFkNTM1MGQzLTBkODItNTE3ZC1hZjE0LThlZGE4Yjc0N2ZiMBgAIAAoADDW8MPxxzA4/PLD8ccwQPzyw/HHMEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAADCPgJgABKsAQgGEqcBChw0K3VDVzRPT2tReGtrODl6aGJaVmhRdE1qVm89EiRlMWNjZjM1Mi01Y2ViLTQxMDAtODNiNy0xMTk0NDlkNjA0YzYYACAAKAAwmqjGiPkwOOioxoj5MEDoqMaI+TBKHHNaWEhiSVlGQjM0aXdRRU1oTFhXVGZmbldyRT1aHiIcQTdQRlhrRTQvU29aeGtneWhHZFBIK0RqSVU0PWUtIQjnwj4CYAUSrQEIDRKoAQoceEhkU1NTSFc0Y0Qyekd1bWtoZ1YwYTg0eXpjPRIkNTVjNzIwZDItZWI5Zi00ZDM3LWE5NTQtZmE5MWE3NjZiYTYxGAAgACgAMNiY67yMMjiGmuu8jDJAhprrvIwyShxoOU9Ja1ZXWm5FTWJ6SjAyK0RBbkdnaGxzbWM9Wh8iHf1JMmllMHBQbkZUUXZMbDJIMmhlbllLOTM0YXM9ZQAAAADCPgJgBRKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQzNWM3ZDhjZC1kMWNkLTU3OTctYTM2MC1iYTMzZDgyNDJmNjAYACAAKAAw3PDD8ccwOIr0w/HHMECK9MPxxzBKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAAwADgA",
+   "version": 1
+}

@@ -1,0 +1,106 @@
+{
+   "checksum": "b5d38355f0223a52217ae6573e5c6a53",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13321657527720155",
+            "date_last_used": "13331232626434413",
+            "guid": "cc30d2fc-3cb8-434e-ae8c-eb71bd61ed4b",
+            "id": "7",
+            "name": "Clases",
+            "type": "url",
+            "url": "https://classroom.google.com/u/2/"
+         }, {
+            "date_added": "13323558079459367",
+            "date_last_used": "13334249036251239",
+            "guid": "e83b34d2-662e-42f9-aa23-1c5ac173e751",
+            "id": "8",
+            "name": "Mi unidad - Google Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/u/2/my-drive"
+         }, {
+            "date_added": "13323581268067863",
+            "date_last_used": "0",
+            "guid": "57ac1e80-3b5e-4da2-a845-f83d13cca9ae",
+            "id": "9",
+            "name": "Word | Microsoft 365",
+            "type": "url",
+            "url": "https://www.office.com/launch/word?ui=es-ES&rs=ES&auth=1"
+         }, {
+            "date_added": "13324312429128641",
+            "date_last_used": "0",
+            "guid": "53eedffc-98ce-45e4-b935-3984a48e7a91",
+            "id": "10",
+            "name": "DALL·E",
+            "type": "url",
+            "url": "https://labs.openai.com/"
+         }, {
+            "date_added": "13324312437603388",
+            "date_last_used": "13326171812913602",
+            "guid": "95892bd0-52a8-40a1-a9dc-c696807135e3",
+            "id": "11",
+            "name": "ChatGPT",
+            "type": "url",
+            "url": "https://chat.openai.com/chat"
+         }, {
+            "date_added": "13363701850154143",
+            "date_last_used": "0",
+            "guid": "b0854ed1-adae-4dd5-ad7a-cdd278fd021c",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Brawl Stars Championship 2024",
+            "type": "url",
+            "url": "https://event.supercell.com/brawlstars/es"
+         }, {
+            "date_added": "13365809327023886",
+            "date_last_used": "0",
+            "guid": "55c720d2-eb9f-4d37-a954-fa91a766ba61",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Catálogo de Microsoft Update",
+            "type": "url",
+            "url": "https://www.catalog.update.microsoft.com/home.aspx"
+         } ],
+         "date_added": "13373934025554903",
+         "date_last_used": "0",
+         "date_modified": "13365809327023886",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13373934025554915",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13326239658712199",
+            "date_last_used": "0",
+            "guid": "e1ccf352-5ceb-4100-83b7-119449d604c6",
+            "id": "6",
+            "name": "Calculus Vol. 1 Tom M Apostol : Free Download, Borrow, and Streaming : Internet Archive",
+            "type": "url",
+            "url": "https://archive.org/details/CalculusTomMApostol/Calculus%20vol.%201%20-%20Tom%20M%20Apostol/mode/1up"
+         } ],
+         "date_added": "13373934025554917",
+         "date_last_used": "0",
+         "date_modified": "13326239658712199",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

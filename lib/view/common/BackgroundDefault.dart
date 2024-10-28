@@ -12,7 +12,7 @@ class BackgroundDefault extends StatelessWidget { //Fondo por defecto de la app
         Positioned(
           right: 5,
           top: 5,
-          child: Image.asset("logo.jpg", width: 100.0, height: 100.0)
+          child: Image.asset("assets/logo.jpg", width: 100.0, height: 100.0)
 
         ),
         Align(

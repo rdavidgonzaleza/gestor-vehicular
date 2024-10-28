@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/view/login.dart';
+import 'package:gestor_vehiculo/view/ui/login.dart';
 import 'view/route/routes.dart';
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       routes: routesApp,
       debugShowCheckedModeBanner: false,
-      home: const LoginPage()
+      home: const LoginPage(),
     );
   }
 }

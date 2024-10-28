@@ -1,1 +1,0 @@
- C:\\Users\\rdavi\\OneDrive\\Documentos\\flutter_test\\gestor-vehicular\\.dart_tool\\flutter_build\\d5a0d4bdc3848eb4c5c86005c26ec44c\\native_assets.yaml: 

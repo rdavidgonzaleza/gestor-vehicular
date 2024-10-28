@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gestor_vehiculo/view/common/Input_Generic.dart';
+import 'package:gestor_vehiculo/view/common/button_generic.dart';
 import 'package:gestor_vehiculo/view/ui/login.dart';
 
 class VehicleRegister extends StatelessWidget {
@@ -8,13 +9,20 @@ class VehicleRegister extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [
-        const TitleTextDefault(text: "Registar Vehiculo"),
-        const Row(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+        Padding(
+          padding: const EdgeInsets.all(50.0),
+          child: const TitleTextDefault(text: "\nRegistrar Vehiculo"),
+        ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-          InputGeneric(hintText: "Marca",),
-          InputGeneric(hintText: "Modelo",)
-        ],),
+            InputGeneric(),
+            InputGeneric(hintText: "Modelo",),
+          ],
+        ),
         const Row(
           children: [
             InputGeneric(hintText: "Placa",),
@@ -22,18 +30,16 @@ class VehicleRegister extends StatelessWidget {
           ],
         ),
         const InputGeneric(hintText: "Número de serie",),
-        Row(
-          children: [
-            ButtonGeneric(
-              onPressed: ()=> Navigator.pushNamed(context, "/loginPage"),
-              child: const TitleTextDefault(text: "Registrar",)),
-            ButtonGeneric(
-              onPressed: ()=> Navigator.pop(context),
-              child: const TitleTextDefault(text: "Salir",))
-          ],
-        )
+        ButtonGeneric(
+          onPressed: ()=> Navigator.pushNamed(context, "/homePage"),
+          text: "Registrar",
+        ),
+        ButtonGeneric(
+          onPressed: ()=> Navigator.pushNamed(context, "/homePage"),
+          text: "Salir", color: Colors.grey,)
         ],
       )
     );
   }
 }
+

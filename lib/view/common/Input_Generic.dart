@@ -9,7 +9,7 @@ class InputGeneric extends StatelessWidget {
     this.maxHeight,
   });
   final String? hintText;
-  final String? controller;
+  final TextEditingController? controller;
   final double? maxWidth;
   final double? maxHeight;
 
@@ -18,7 +18,7 @@ class InputGeneric extends StatelessWidget {
     return Container(
       constraints: BoxConstraints(maxWidth: maxWidth ?? 150.0, maxHeight: maxHeight ?? 25.0),
       margin: EdgeInsets.all(10.0),
-      child: TextFormField(decoration: InputDecoration(hintText: hintText ?? "Marca"),),
+      child: TextFormField(decoration: InputDecoration(hintText: hintText ?? "Marca"), controller: controller,),
     );
   }
 }

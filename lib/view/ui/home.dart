@@ -32,9 +32,6 @@ class HomePage extends StatelessWidget {
             ButtonGeneric(text: "Ver detalles", onPressed: 
               ()=> Navigator.pushNamed(context, "/maintenance")
             ),
-            ButtonGeneric(text: "Documentos", onPressed: 
-              ()=> Navigator.pushNamed(context, "/documents")
-            ),
             ButtonGeneric(text: "Eventos", onPressed: 
               ()=> Navigator.pushNamed(context, "/eventRegister")
             ),
@@ -49,9 +46,6 @@ class HomePage extends StatelessWidget {
             ),
             ButtonGeneric(text: "Ver detalles", onPressed: 
               ()=> Navigator.pushNamed(context, "/maintenance")
-            ),
-            ButtonGeneric(text: "Documentos", onPressed: 
-              ()=> Navigator.pushNamed(context, "/documents")
             ),
             ButtonGeneric(text: "Eventos", onPressed: 
               ()=> Navigator.pushNamed(context, "/eventRegister")

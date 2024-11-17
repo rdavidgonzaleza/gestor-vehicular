@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gestor_vehiculo/view/ui/documents.dart';
 import 'package:gestor_vehiculo/view/ui/event_history.dart';
 import 'package:gestor_vehiculo/view/ui/event_register.dart';
 import 'package:gestor_vehiculo/view/ui/home.dart';
@@ -16,5 +15,4 @@ final routesApp = {
   "/eventHistory": (BuildContext context) => const EventHistory(),
   "/eventRegister": (BuildContext context) => const EventRegister(),
   "/maintenance": (BuildContext context) => const Maintenance(),
-  "/documents": (BuildContext context) => const Documents(),
 };

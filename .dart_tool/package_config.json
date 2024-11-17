@@ -50,6 +50,12 @@
       "languageVersion": "3.5"
     },
     {
+      "name": "flutter_picker",
+      "rootUri": "file:///C:/Users/rdavi/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_picker-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///C:/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -164,7 +170,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-10-22T17:23:40.366557Z",
+  "generated": "2024-11-08T19:31:40.103593Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///C:/flutter",

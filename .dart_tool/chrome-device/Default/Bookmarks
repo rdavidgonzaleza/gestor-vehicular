@@ -1,0 +1,129 @@
+{
+   "checksum": "5b992e591ae3c326f7295ff477c2e4ad",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13348374766039169",
+            "date_last_used": "0",
+            "guid": "03b835f5-f2d4-4fd3-852c-a5c4896ec8a2",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Addison Wesley - Compiladores. Principios, Tecnicas y Herramientas.pdf - Google Drive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/file/d/0B_u1rzdqYCnzWFpqN3h1ZXZTR0E/view?resourcekey=0-TNuuf8q7U5TTKLM41YsSvg",
+            "visit_count": 0
+         }, {
+            "date_added": "13349907189577262",
+            "date_last_used": "0",
+            "guid": "b103b994-0f8c-49f3-b610-bdcd23972824",
+            "id": "10",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Deportes en vivo, películas y series | Star+",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.starplus.com/es-419/home",
+            "visit_count": 0
+         }, {
+            "date_added": "13351017157191216",
+            "date_last_used": "0",
+            "guid": "1e6177d4-c966-4494-8149-4a74ccc43ef1",
+            "id": "11",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Aprende a programar gratis: Cursos de programación para gente ocupada",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.freecodecamp.org/espanol/learn/",
+            "visit_count": 0
+         }, {
+            "date_added": "13357870224466387",
+            "date_last_used": "0",
+            "guid": "3db2fb18-f3d0-4923-8529-9ab226b9c526",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Instrucción MySQL CREATE DATABASE",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.w3schools.com/mysql/mysql_create_db.asp",
+            "visit_count": 0
+         }, {
+            "date_added": "13376448083329955",
+            "date_last_used": "0",
+            "guid": "b5963ea0-e8ea-443f-bfe4-0f6e517571cd",
+            "id": "8",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/",
+            "visit_count": 0
+         }, {
+            "date_added": "13376448083329797",
+            "date_last_used": "0",
+            "guid": "660d155a-0e3f-4e7f-9795-1e33458a61ee",
+            "id": "7",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/",
+            "visit_count": 0
+         }, {
+            "date_added": "13376448083327209",
+            "date_last_used": "0",
+            "guid": "e2bba1d7-e244-4975-98da-42701060fdb7",
+            "id": "6",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=247829",
+            "visit_count": 0
+         } ],
+         "date_added": "13376448083057456",
+         "date_last_used": "0",
+         "date_modified": "13376448083329955",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13376448083057459",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Otros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13376448083057462",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos móviles",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCJ1KuUGTAQAAKg4QABgBIAgoBTAAOABAABIAKhg5NHRaQnVBY3Z6bWo3UDdRQjBHdWlRPT1IA6AGDBKtAQgMEqgBChw0clQzWEhWV2ZaVStVQWlSMk9zL2ViSnhEeGs9EiQzZGIyZmIxOC1mM2QwLTQ5MjMtODUyOS05YWIyMjZiOWM1MjYYACACKAIw/K/ljbQyOLHOlvPuMUC0vOWNtDJKHGE2N05GOU9nOElrUGg1b1hQSDVub2YrY3BWND1aHyId2zBBL0VvL0tUaXpQK2UyRTNLNmMxUS9lQjdmWT1loytZI8I+AmAFEq0BCAsSqAEKHHEzNFhIODhZSUtiT2hWTmZ5RmZtU1REc2tzUT0SJDFlNjE3N2Q0LWM5NjYtNDQ5NC04MTQ5LTRhNzRjY2M0M2VmMRgAIAIoAjD5r+WNtDI4guuwr9UxQLS85Y20MkocWjF1OW1BUWdJNzFyb1NmeStNaGkyT09nL01FPVofIh22YUJLeVZweDNqNTUvMXNiZGtlcUszN3JLLzA4PWV3iSLtwj4CYAUSrAEIChKnAQocNzgycXFuVmNDaDQvSThrMG1LUXg5TTNJYjE4PRIkYjEwM2I5OTQtMGY4Yy00OWYzLWI2MTAtYmRjZDIzOTcyODI0GAAgAigCMPuv5Y20Mji9042e0TFAs7zljbQyShxSL3hvQ29EMi9sWnRDa0JFWWU0eUx6M3g2eHM9Wh4iHG1ycEw1WnVoUzFmYThQcVEzWTc1cHR6M2Nzbz1lSF6fdMI+AmAFEqwBCAkSpwEKHGN2Tk1pWEtHTGNJTExOdkJNQWc4Uk05Rm95VT0SJDAzYjgzNWY1LWYyZDQtNGZkMy04NTJjLWE1YzQ4OTZlYzhhMhgAIAIoAjD6r+WNtDI49v+xw8sxQLO85Y20MkocR0N4M3ViczVneU5YTW43dUQrazhERlFkQWU4PVoeIhw3N0JpSXNIVjJuSC9JVEQvbGJBSmZJSTkyWk09ZboKLFHCPgJgBRKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQxZTE3OTcwNC0xYmQ3LTVmMjAtOTc3Ny0xYmExM2E5NmU4Y2MYACAAKAAw0eSOyKQxOLLmjsikMUCy5o7IpDFKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkY2NhZjk4OTQtYjY0ZS01ZjBmLWFjZDItODAxMDZiZDQ1YjI3GAAgACgAMNLkjsikMTjH5o7IpDFAx+aOyKQxShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAEo4BCAMSiQEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJDNlNjYzZWNlLTdmNmYtNTgyZC04Y2E5LWJiODY2MjllODM4NhgAIAAoADDX5I7IpDE48+aOyKQxQPPmjsikMUoceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAADCPgJgADAAOAA=",
+   "version": 1
+}

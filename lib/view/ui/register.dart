@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gestor_vehiculo/view/common/Input_Generic.dart';
 import 'package:gestor_vehiculo/view/common/button_generic.dart';
 import 'package:gestor_vehiculo/view/ui/login.dart';
-import '../common/BackgroundDefault.dart';
+import '../common/background_default.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});

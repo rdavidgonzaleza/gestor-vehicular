@@ -1,4 +1,5 @@
 {
     "cmake.sourceDirectory": "C:/Users/E1504FA-NJ475W/OneDrive/Escritorio/ft/gestor_vehiculo/windows/flutter",
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

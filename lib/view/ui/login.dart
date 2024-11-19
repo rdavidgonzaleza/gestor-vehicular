@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gestor_vehiculo/view/common/button_generic.dart';
-import '../common/BackgroundDefault.dart';
+import '../common/background_default.dart';
 import '../common/Input_Generic.dart';
 import '../../model/propietario.dart';
 

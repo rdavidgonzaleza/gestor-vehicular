@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             ButtonGeneric(text: "Ver detalles", onPressed: 
-              ()=> Navigator.pushNamed(context, "/maintenance")
+              ()=> Navigator.pushNamed(context, "/maintenance2")
             ),
             ButtonGeneric(text: "Eventos", onPressed: 
               ()=> Navigator.pushNamed(context, "/eventRegister")
@@ -39,16 +39,34 @@ class HomePage extends StatelessWidget {
               constraints: BoxConstraints(maxWidth: 200.0, minWidth: 25.0),
               child: Column(
                 children: [
-                  TitleTextDefault(text: "Vehículo 2: Chevrolet Joy 2023",),
+                  TitleTextDefault(text: "Vehículo 2: Chevrolet Joy 2023",),/*cambiar de texto a informacion que este almacenada en la bd*/
                   TitleTextDefault(text: "Placa: BDA321",),
                 ],
               ),
             ),
-            ButtonGeneric(text: "Ver detalles", onPressed: 
+
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ButtonGeneric(onPressed: ()=> Navigator.pushNamed(context, "/maintenance"), text: "Ver detaller",),
+              SizedBox(width: 3),
+              ButtonGeneric(onPressed: ()=> Navigator.pushNamed(context, "/eventRegister"), text: "Eventos",),
+          ]
+            ),
+
+            /*ButtonGeneric(text: "Ver detalles", onPressed: 
               ()=> Navigator.pushNamed(context, "/maintenance")
             ),
+
             ButtonGeneric(text: "Eventos", onPressed: 
               ()=> Navigator.pushNamed(context, "/eventRegister")
+            ),  */ 
+
+            Text("\n\n"),
+
+            ButtonGeneric(text: "Salir", onPressed: 
+              ()=> Navigator.pushNamed(context, "/loginPage")
             ),
           ],
         ),

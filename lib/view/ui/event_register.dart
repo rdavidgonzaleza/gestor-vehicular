@@ -18,11 +18,17 @@ class EventRegister extends StatelessWidget {
             InputGeneric(hintText: "",maxWidth: size.width,),
             InkWell(
               onTap: () async => showDatePicker,
-              child: TitleTextDefault(text: "Fecha", decoration: TextDecoration.underline,),
+              child: TitleTextDefault(text: "Fecha: ", ),
             ),
+            
             InputGeneric(hintText: "Descripción", maxWidth: size.width,),
-            ButtonGeneric(text: "Documentos Relacionados",onPressed: ()=>Navigator.pushNamed(context, "/documents")),
-            TitleTextDefault(text: "Registrar Evento", decoration: TextDecoration.underline,),
+            TitleTextDefault(text: "Documentos Relacionados", decoration: TextDecoration.underline,),
+            ButtonGeneric(text: "", color: Colors.grey, onPressed: ()=>Navigator.pushNamed(context, "/documents", )),
+            //en esta parte se tiene que abrir para que el propietario pueda subir los documentos
+            //ButtonGeneric(text: "Registrar Evento", onPressed: f)),
+            
+
+            Text("\n\n"),
             ButtonGeneric(onPressed: ()=> Navigator.pushNamed(context, "/eventHistory"), text: "Consultar",),
             ButtonGeneric(onPressed: ()=> Navigator.pushNamed(context, "/homePage"), text: "Salir", color: Colors.grey,)
           ],

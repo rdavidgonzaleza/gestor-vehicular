@@ -4,6 +4,7 @@ import '../common/background_default.dart';
 import '../common/Input_Generic.dart';
 import '../../model/propietario.dart';
 
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -27,18 +28,11 @@ class LoginPage extends StatelessWidget {
               const Center(child: TitleTextDefault()),
               InputGeneric(hintText: "Usuario",maxHeight: size.height, maxWidth: size.width, controller: userController,),
               InputGeneric(hintText: "Contraseña",maxHeight: size.height, maxWidth: size.width, controller: passwordController,),
-              Center(
-                child: ButtonGeneric(
-                  onPressed: (){
-                    if(propietario.iniciarSesion(userController.text, passwordController.text)){
-                      Navigator.pushNamed(context, "/homePage");
-                    }
-                    else{
-                      
-                    }
-                  },
-                ),
-              ),
+              
+              ButtonGeneric(
+              onPressed: ()=> Navigator.pushNamed(context, "/homePage"),
+              text: "Iniciar Sesión",),
+              
               Center(child: Column(
                 children: [
                   const TitleTextDefault(text: "¿No tienes cuenta?",),

@@ -13,7 +13,7 @@ class Maintenance extends StatelessWidget {
         child: Column(
           children: [
             TitleTextDefault(
-              text: "Historial de mantenimiento",
+              text: "Historial de mantenimiento", //se deberia tener 2 fechas, una del dia y otra pra el recordatorio
             ),
             Row(
               children: [
@@ -21,6 +21,7 @@ class Maintenance extends StatelessWidget {
                 SizedBox(width: size.width/3,child: TitleTextDefault(text: "Tipo",),),
                 SizedBox(width: size.width/3,child: TitleTextDefault(text: "Descripcion",),),
               ],
+
             ),
             ButtonGeneric(
               onPressed: ()=> Navigator.pushNamed(context, "/homePage"),

@@ -35,7 +35,7 @@ class VehicleRegister extends StatelessWidget {
           text: "Registrar",
         ),
         ButtonGeneric(
-          onPressed: ()=> Navigator.pushNamed(context, "/homePage"),
+          onPressed: ()=> Navigator.pushNamed(context, "/loginPage"),
           text: "Salir", color: Colors.grey,)
         ],
       )

@@ -1,76 +1,123 @@
 import 'package:flutter/material.dart';
 import 'package:gestor_vehiculo/view/common/button_generic.dart';
-import 'package:gestor_vehiculo/view/ui/login.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({
-    super.key
-  });
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    //final size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TitleTextDefault(text: "Mis Vehiculos"),
-            InkWell(
-              child: TitleTextDefault(text: "+ Añadir nuevo vehículo", decoration: TextDecoration.underline,), 
-              onTap: () => Navigator.pushNamed(context, "/vehicleRegister"),
-            ),
-            Container(
-              constraints: BoxConstraints(maxWidth: 200.0, minWidth: 25.0),
-              child: Column(
-                children: [
-                  TitleTextDefault(text: "Vehículo 1: Ford Focus 2020",),
-                  TitleTextDefault(text: "Placa: ABC123",),
-                ],
-              ),
-            ),
-            ButtonGeneric(text: "Ver detalles", onPressed: 
-              ()=> Navigator.pushNamed(context, "/maintenance2")
-            ),
-            ButtonGeneric(text: "Eventos", onPressed: 
-              ()=> Navigator.pushNamed(context, "/eventRegister")
-            ),
-            Container(
-              constraints: BoxConstraints(maxWidth: 200.0, minWidth: 25.0),
-              child: Column(
-                children: [
-                  TitleTextDefault(text: "Vehículo 2: Chevrolet Joy 2023",),/*cambiar de texto a informacion que este almacenada en la bd*/
-                  TitleTextDefault(text: "Placa: BDA321",),
-                ],
-              ),
-            ),
-
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      appBar: AppBar(
+        title: const Text("Gestión de Vehículos"),
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ButtonGeneric(onPressed: ()=> Navigator.pushNamed(context, "/maintenance"), text: "Ver detaller",),
-              SizedBox(width: 3),
-              ButtonGeneric(onPressed: ()=> Navigator.pushNamed(context, "/eventRegister"), text: "Eventos",),
-          ]
+              const Text(
+                "Mis Vehículos",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 16),
+              InkWell(
+                onTap: () => Navigator.pushNamed(context, "/vehicleRegister"),
+                child: const Text(
+                  "+ Añadir nuevo vehículo",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.blue,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              _buildVehicleCard(
+                context: context,
+                title: "Vehículo 1: Ford Focus 2020",
+                plate: "Placa: ABC123",
+                onDetailsPressed: () =>
+                    Navigator.pushNamed(context, "/maintenance2"),
+                onEventsPressed: () =>
+                    Navigator.pushNamed(context, "/eventRegister"),
+              ),
+              const SizedBox(height: 20),
+              _buildVehicleCard(
+                context: context,
+                title: "Vehículo 2: Chevrolet Joy 2023",
+                plate: "Placa: BDA321",
+                onDetailsPressed: () =>
+                    Navigator.pushNamed(context, "/maintenance"),
+                onEventsPressed: () =>
+                    Navigator.pushNamed(context, "/eventRegister"),
+              ),
+              const SizedBox(height: 30),
+              ButtonGeneric(
+                text: "Salir",
+                onPressed: () => Navigator.pushNamed(context, "/loginPage"),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildVehicleCard({
+    required BuildContext context,
+    required String title,
+    required String plate,
+    required VoidCallback onDetailsPressed,
+    required VoidCallback onEventsPressed,
+  }) {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-
-            /*ButtonGeneric(text: "Ver detalles", onPressed: 
-              ()=> Navigator.pushNamed(context, "/maintenance")
+            const SizedBox(height: 8),
+            Text(
+              plate,
+              style: const TextStyle(fontSize: 16, color: Colors.grey),
             ),
-
-            ButtonGeneric(text: "Eventos", onPressed: 
-              ()=> Navigator.pushNamed(context, "/eventRegister")
-            ),  */ 
-
-            Text("\n\n"),
-
-            ButtonGeneric(text: "Salir", onPressed: 
-              ()=> Navigator.pushNamed(context, "/loginPage")
+            const SizedBox(height: 12),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(
+                  onPressed: onDetailsPressed,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueAccent,
+                  ),
+                  child: const Text("Ver detalles"),
+                ),
+                ElevatedButton(
+                  onPressed: onEventsPressed,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orangeAccent,
+                  ),
+                  child: const Text("Eventos"),
+                ),
+              ],
             ),
           ],
         ),
-      )
+      ),
     );
   }
 }

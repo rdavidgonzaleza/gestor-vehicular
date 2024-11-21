@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gestor_vehiculo/view/common/button_generic.dart';
 import '../common/background_default.dart';
 import '../common/Input_Generic.dart';
-import '../../model/propietario.dart';
 
 
 class LoginPage extends StatelessWidget {
@@ -13,35 +12,67 @@ class LoginPage extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final TextEditingController userController = TextEditingController();
     final TextEditingController passwordController = TextEditingController();
-    late Propietario propietario = Propietario("identificacion", "tipoDocumento", "primerNombre", "primerApellido", "segundoNombre", "segundoApellido", "licenciaNumero", "password", "email", "telefono");
 
     return Scaffold(
-      backgroundColor: const Color(0xFFFFFFFF),
-      body: SizedBox(
-        height: size.height,
-        width: size.width,
-        child: BackgroundDefault(
-          child: Column(
-            mainAxisSize: MainAxisSize.min, 
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Center(child: TitleTextDefault()),
-              InputGeneric(hintText: "Usuario",maxHeight: size.height, maxWidth: size.width, controller: userController,),
-              InputGeneric(hintText: "Contraseña",maxHeight: size.height, maxWidth: size.width, controller: passwordController,),
-              
-              ButtonGeneric(
-              onPressed: ()=> Navigator.pushNamed(context, "/homePage"),
-              text: "Iniciar Sesión",),
-              
-              Center(child: Column(
+      body: BackgroundDefault(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const TitleTextDefault(text: "¿No tienes cuenta?",),
-                  InkWell(
-                    onTap: ()=> Navigator.pushNamed(context, "/registerPage"),
-                    child: const TitleTextDefault(text: "Registrate", decoration: TextDecoration.underline,size: 15.0,)),
+                  const SizedBox(height: 40),
+                  Image.asset('assets/logo.png', height: 100), // Logo centrado
+                  const SizedBox(height: 20),
+                  const Text(
+                    "Bienvenido de nuevo",
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 10),
+                  const Text(
+                    "Inicia sesión para continuar",
+                    style: TextStyle(fontSize: 16, color: Colors.grey),
+                  ),
+                  const SizedBox(height: 30),
+                  InputGeneric(
+                    hintText: "Usuario",
+                    maxHeight: size.height,
+                    maxWidth: size.width,
+                    controller: userController,
+                  ),
+                  const SizedBox(height: 20),
+                  InputGeneric(
+                    hintText: "Contraseña",
+                    maxHeight: size.height,
+                    maxWidth: size.width,
+                    controller: passwordController,
+                  ),
+                  const SizedBox(height: 30),
+                  ButtonGeneric(
+                    onPressed: () => Navigator.pushNamed(context, "/homePage"),
+                    text: "Iniciar Sesión",
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("¿No tienes cuenta? ",
+                          style: TextStyle(color: Colors.grey)),
+                      GestureDetector(
+                        onTap: () => Navigator.pushNamed(context, "/registerPage"),
+                        child: const Text(
+                          "Regístrate",
+                          style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              color: Colors.blue),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
-              )),
-            ],
+              ),
+            ),
           ),
         ),
       ),
@@ -49,25 +80,3 @@ class LoginPage extends StatelessWidget {
   }
 }
 
-class TitleTextDefault extends StatelessWidget { //widget para texto de titulo por default
-  const TitleTextDefault({
-    super.key,
-    this.color,
-    this.size,
-    this.text,
-    this.decoration,
-    });
-  final String? text;
-  final Color? color;
-  final double? size;
-  final TextDecoration? decoration;
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text ?? "Inicie Sesión", 
-      style: TextStyle(color: Colors.black, 
-      decoration: decoration ?? TextDecoration.none, fontSize: size ?? 20.0, ),  
-    );
-  }
-}

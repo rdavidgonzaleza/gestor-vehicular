@@ -25,7 +25,7 @@ class ButtonGeneric extends StatelessWidget {
           elevation: 0,
           backgroundColor: color ?? Color.fromARGB(255, 43, 168, 226),
         ),
-        child: Text(
+        child: Text(textAlign: TextAlign.center,
           text ?? "Iniciar Sesión",
           style: const TextStyle(color: Colors.white),
         ),

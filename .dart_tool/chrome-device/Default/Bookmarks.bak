@@ -1,8 +1,41 @@
 {
-   "checksum": "6dc6ed3c7a1767da12c2691690cc9eb5",
+   "checksum": "74b1ced172b1a1e8c260b29aa22f6428",
    "roots": {
       "bookmark_bar": {
          "children": [ {
+            "date_added": "13376662833132085",
+            "date_last_used": "0",
+            "guid": "d0124c8b-fc86-4cff-91e2-82aa21f7f5eb",
+            "id": "142",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/",
+            "visit_count": 0
+         }, {
+            "date_added": "13376662833131877",
+            "date_last_used": "0",
+            "guid": "59d30253-718e-4df6-a593-3e3463243e8c",
+            "id": "141",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/",
+            "visit_count": 0
+         }, {
+            "date_added": "13376662833128102",
+            "date_last_used": "0",
+            "guid": "d0ca5ba1-679b-4c37-ac0b-733ed07b168a",
+            "id": "140",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=247829",
+            "visit_count": 0
+         }, {
             "date_added": "13376547425078638",
             "date_last_used": "0",
             "guid": "e166d34f-43a9-4223-aa3b-41ea14b53709",
@@ -919,7 +952,7 @@
          } ],
          "date_added": "13376448083057456",
          "date_last_used": "0",
-         "date_modified": "13376547425078638",
+         "date_modified": "13376662833132085",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Barra de favoritos",
@@ -949,6 +982,6 @@
          "type": "folder"
       }
    },
-   "sync_metadata": "CjEKDgiIgQISCJkmXUSTAQAAEgAqGDk0dFpCdUFjdnptajdQN1FCMEd1aVE9PUgDoAYMEo4BCAMSiQEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJDNlNjYzZWNlLTdmNmYtNTgyZC04Y2E5LWJiODY2MjllODM4NhgAIAAoADDX5I7IpDE48+aOyKQxQPPmjsikMUoceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAADCPgJgABKOAQgCEokBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiRjY2FmOTg5NC1iNjRlLTVmMGYtYWNkMi04MDEwNmJkNDViMjcYACAAKAAw0uSOyKQxOMfmjsikMUDH5o7IpDFKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAwj4CYAASjgEIARKJAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkMWUxNzk3MDQtMWJkNy01ZjIwLTk3NzctMWJhMTNhOTZlOGNjGAAgACgAMNHkjsikMTiy5o7IpDFAsuaOyKQxShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAAMI+AmAAEqwBCAkSpwEKHGN2Tk1pWEtHTGNJTExOdkJNQWc4Uk05Rm95VT0SJDAzYjgzNWY1LWYyZDQtNGZkMy04NTJjLWE1YzQ4OTZlYzhhMhgAIAIoAjD6r+WNtDI49v+xw8sxQLO85Y20MkocR0N4M3ViczVneU5YTW43dUQrazhERlFkQWU4PVoeIhw3N0JpSXNIVjJuSC9JVEQvbGJBSmZJSTkyWk09ZboKLFHCPgJgBRKsAQgKEqcBChw3ODJxcW5WY0NoNC9JOGswbUtReDlNM0liMTg9EiRiMTAzYjk5NC0wZjhjLTQ5ZjMtYjYxMC1iZGNkMjM5NzI4MjQYACACKAIw+6/ljbQyOL3TjZ7RMUCzvOWNtDJKHFIveG9Db0QyL2xadENrQkVZZTR5THozeDZ4cz1aHiIcbXJwTDVadWhTMWZhOFBxUTNZNzVwdHozY3NvPWVIXp90wj4CYAUSrQEICxKoAQoccTM0WEg4OFlJS2JPaFZOZnlGZm1TVERza3NRPRIkMWU2MTc3ZDQtYzk2Ni00NDk0LTgxNDktNGE3NGNjYzQzZWYxGAAgAigCMPmv5Y20MjiC67Cv1TFAtLzljbQyShxaMXU5bUFRZ0k3MXJvU2Z5K01oaTJPT2cvTUU9Wh8iHbZhQkt5VnB4M2o1NS8xc2Jka2VxSzM3cksvMDg9ZXeJIu3CPgJgBRKtAQgMEqgBChw0clQzWEhWV2ZaVStVQWlSMk9zL2ViSnhEeGs9EiQzZGIyZmIxOC1mM2QwLTQ5MjMtODUyOS05YWIyMjZiOWM1MjYYACACKAIw/K/ljbQyOLHOlvPuMUC0vOWNtDJKHGE2N05GOU9nOElrUGg1b1hQSDVub2YrY3BWND1aHyId2zBBL0VvL0tUaXpQK2UyRTNLNmMxUS9lQjdmWT1loytZI8I+AmAFMAA4AA==",
+   "sync_metadata": "CjEKDgiIgQISCJkmXUSTAQAAEgAqGDk0dFpCdUFjdnptajdQN1FCMEd1aVE9PUgDoAYMEq0BCAwSqAEKHDRyVDNYSFZXZlpVK1VBaVIyT3MvZWJKeER4az0SJDNkYjJmYjE4LWYzZDAtNDkyMy04NTI5LTlhYjIyNmI5YzUyNhgAIAIoAjD8r+WNtDI4sc6W8+4xQLS85Y20MkocYTY3TkY5T2c4SWtQaDVvWFBINW5vZitjcFY0PVofIh3bMEEvRW8vS1RpelArZTJFM0s2YzFRL2VCN2ZZPWWjK1kjwj4CYAUSrQEICxKoAQoccTM0WEg4OFlJS2JPaFZOZnlGZm1TVERza3NRPRIkMWU2MTc3ZDQtYzk2Ni00NDk0LTgxNDktNGE3NGNjYzQzZWYxGAAgAigCMPmv5Y20MjiC67Cv1TFAtLzljbQyShxaMXU5bUFRZ0k3MXJvU2Z5K01oaTJPT2cvTUU9Wh8iHbZhQkt5VnB4M2o1NS8xc2Jka2VxSzM3cksvMDg9ZXeJIu3CPgJgBRKsAQgKEqcBChw3ODJxcW5WY0NoNC9JOGswbUtReDlNM0liMTg9EiRiMTAzYjk5NC0wZjhjLTQ5ZjMtYjYxMC1iZGNkMjM5NzI4MjQYACACKAIw+6/ljbQyOL3TjZ7RMUCzvOWNtDJKHFIveG9Db0QyL2xadENrQkVZZTR5THozeDZ4cz1aHiIcbXJwTDVadWhTMWZhOFBxUTNZNzVwdHozY3NvPWVIXp90wj4CYAUSrAEICRKnAQocY3ZOTWlYS0dMY0lMTE52Qk1BZzhSTTlGb3lVPRIkMDNiODM1ZjUtZjJkNC00ZmQzLTg1MmMtYTVjNDg5NmVjOGEyGAAgAigCMPqv5Y20Mjj2/7HDyzFAs7zljbQyShxHQ3gzdWJzNWd5TlhNbjd1RCtrOERGUWRBZTg9Wh4iHDc3QmlJc0hWMm5IL0lURC9sYkFKZklJOTJaTT1lugosUcI+AmAFEo4BCAESiQEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDFlMTc5NzA0LTFiZDctNWYyMC05Nzc3LTFiYTEzYTk2ZThjYxgAIAAoADDR5I7IpDE4suaOyKQxQLLmjsikMUocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAADCPgJgABKOAQgCEokBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiRjY2FmOTg5NC1iNjRlLTVmMGYtYWNkMi04MDEwNmJkNDViMjcYACAAKAAw0uSOyKQxOMfmjsikMUDH5o7IpDFKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAwj4CYAASjgEIAxKJAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkM2U2NjNlY2UtN2Y2Zi01ODJkLThjYTktYmI4NjYyOWU4Mzg2GAAgACgAMNfkjsikMTjz5o7IpDFA8+aOyKQxShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAAMI+AmAAMAA4AA==",
    "version": 1
 }

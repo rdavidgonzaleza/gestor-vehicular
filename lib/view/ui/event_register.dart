@@ -87,15 +87,23 @@ class EventRegister extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  ButtonGeneric(
-                    onPressed: () => Navigator.pushNamed(context, "/eventHistory"),
-                    text: "Consultar Eventos",
-                    color: Colors.blueAccent,
+                  SizedBox(
+                    width: 150.0,
+                    height: 80.0,
+                    child: ButtonGeneric(
+                      onPressed: () => Navigator.pushNamed(context, "/eventHistory"),
+                      text: "Consultar Eventos",
+                      color: Colors.blueAccent,
+                    ),
                   ),
-                  ButtonGeneric(
-                    onPressed: () => Navigator.pushNamed(context, "/homePage"),
-                    text: "Salir",
-                    color: Colors.grey[600]!,
+                  SizedBox(
+                    width: 150.0,
+                    height: 80.0,
+                    child: ButtonGeneric(
+                      onPressed: () => Navigator.pushNamed(context, "/homePage"),
+                      text: "Salir",
+                      color: Colors.grey[600]!,
+                    ),
                   ),
                 ],
               ),

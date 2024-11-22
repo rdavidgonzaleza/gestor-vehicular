@@ -1,106 +1,158 @@
 import 'package:flutter/material.dart';
-import 'package:gestor_vehiculo/view/common/input_generic.dart';
-import 'package:gestor_vehiculo/view/common/button_generic.dart';
 
 class EventRegister extends StatelessWidget {
   const EventRegister({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Registro de Eventos"),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: const Text(
+          "Registrar Evento",
+          style: TextStyle(color: Colors.black, fontSize: 20),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pop(context),
+        ),
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                "Registro de Eventos",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              "Detalles del Evento",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
-              const SizedBox(height: 20),
-              const Text(
-                "Tipo de evento:",
-                style: TextStyle(fontSize: 16),
-              ),
-              const SizedBox(height: 10),
-              InputGeneric(
-                hintText: "Ingrese el tipo de evento",
-                maxWidth: size.width,
-              ),
-              const SizedBox(height: 20),
-              const Text(
-                "Fecha:",
-                style: TextStyle(fontSize: 16),
-              ),
-              const SizedBox(height: 10),
-              InkWell(
-                onTap: () => _selectDate(context),
-                child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.grey),
-                  ),
-                  child: const Text(
-                    "Seleccionar fecha",
-                    style: TextStyle(fontSize: 16, color: Colors.blue),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text(
-                "Descripción:",
-                style: TextStyle(fontSize: 16),
-              ),
-              const SizedBox(height: 10),
-              InputGeneric(
-                hintText: "Ingrese una breve descripción",
-                maxWidth: size.width,
-              ),
-              const SizedBox(height: 20),
-              const Text(
-                "Documentos Relacionados",
-                style: TextStyle(
-                  fontSize: 16,
-                  decoration: TextDecoration.underline,
-                  color: Colors.blue,
-                ),
-              ),
-              const SizedBox(height: 10),
-              ButtonGeneric(
-                text: "Subir Documentos",
-                color: Colors.grey[400]!,
-                onPressed: () => Navigator.pushNamed(context, "/documents"),
-              ),
-              const SizedBox(height: 40),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  ButtonGeneric(
-                    onPressed: () => Navigator.pushNamed(context, "/eventHistory"),
-                    text: "Consultar Eventos",
+            ),
+            const SizedBox(height: 20),
+            _buildInputField(
+              hintText: "Tipo de evento",
+              labelText: "Tipo de Evento",
+              icon: Icons.event_note_outlined,
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              "Fecha del Evento",
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            ),
+            const SizedBox(height: 10),
+            _buildDateSelector(context),
+            const SizedBox(height: 20),
+            _buildInputField(
+              hintText: "Ingrese una breve descripción",
+              labelText: "Descripción",
+              icon: Icons.description_outlined,
+            ),
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  "Documentos Relacionados",
+                  style: TextStyle(
+                    fontSize: 16,
                     color: Colors.blueAccent,
                   ),
-                  ButtonGeneric(
-                    onPressed: () => Navigator.pushNamed(context, "/homePage"),
-                    text: "Salir",
-                    color: Colors.grey[600]!,
+                ),
+                TextButton.icon( // aqui se deben subir los documentos
+                  onPressed: () => Navigator.pushNamed(context, "/documents"),
+                  icon: const Icon(Icons.upload_file, color: Colors.blueAccent),
+                  label: const Text(
+                    "Subir",
+                    style: TextStyle(color: Colors.blueAccent),
                   ),
-                ],
-              ),
-            ],
-          ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 30),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, "/eventHistory"),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueAccent,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 24, vertical: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: const Text(
+                    "Consultar Eventos",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, "/homePage"),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey[600],
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 24, vertical: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: const Text(
+                    "Salir",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildInputField({
+    required String hintText,
+    required String labelText,
+    required IconData icon,
+  }) {
+    return TextField(
+      decoration: InputDecoration(
+        labelText: labelText,
+        hintText: hintText,
+        prefixIcon: Icon(icon, color: Colors.blueAccent),
+        filled: true,
+        fillColor: Colors.grey[100],
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide.none,
+        ),
+        contentPadding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+      ),
+    );
+  }
+
+  Widget _buildDateSelector(BuildContext context) {
+    return InkWell(
+      onTap: () => _selectDate(context),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+        decoration: BoxDecoration(
+          color: Colors.grey[100],
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.grey[400]!),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.calendar_today_outlined, color: Colors.blueAccent),
+            const SizedBox(width: 10),
+            const Text(
+              "Seleccionar fecha",
+              style: TextStyle(fontSize: 16, color: Colors.blueAccent),
+            ),
+          ],
         ),
       ),
     );
@@ -115,7 +167,7 @@ class EventRegister extends StatelessWidget {
       lastDate: DateTime(2100),
     );
     if (picked != null) {
-      // Aquí puedes actualizar el estado para mostrar la fecha seleccionada
+      // Aquí puedes implementar la lógica para mostrar o guardar la fecha seleccionada.
       print("Fecha seleccionada: ${picked.toLocal()}");
     }
   }

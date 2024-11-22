@@ -7,6 +7,7 @@ import 'package:gestor_vehiculo/view/ui/maintenance.dart';
 import 'package:gestor_vehiculo/view/ui/register.dart';
 import 'package:gestor_vehiculo/view/ui/vehicle_register.dart';
 
+
 final routesApp = {
   "/loginPage": (BuildContext context) => const LoginPage(),
   "/registerPage": (BuildContext context) => const RegisterPage(),
@@ -15,4 +16,5 @@ final routesApp = {
   "/eventHistory": (BuildContext context) => const EventHistory(),
   "/eventRegister": (BuildContext context) => const EventRegister(),
   "/maintenance": (BuildContext context) => const Maintenance(),
+  
 };

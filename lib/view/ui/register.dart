@@ -1,64 +1,146 @@
 import 'package:flutter/material.dart';
-import 'package:gestor_vehiculo/view/common/input_generic.dart';
-import 'package:gestor_vehiculo/view/common/button_generic.dart';
-import '../common/background_default.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-
     return Scaffold(
-      body: BackgroundDefault(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Center(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: const Text(
+          "Crear Cuenta",
+          style: TextStyle(color: Colors.black, fontSize: 20),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              "¡Bienvenido!",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Por favor completa los campos para registrarte.",
+              style: TextStyle(fontSize: 16, color: Colors.grey),
+            ),
+            const SizedBox(height: 30),
+            _buildInputField(
+              hintText: "Correo electrónico",
+              icon: Icons.email_outlined,
+            ),
+            const SizedBox(height: 20),
+            _buildInputField(
+              hintText: "Contraseña",
+              icon: Icons.lock_outline,
+              obscureText: true,
+            ),
+            const SizedBox(height: 20),
+            _buildInputField(
+              hintText: "Nombre",
+              icon: Icons.person_outline,
+            ),
+            const SizedBox(height: 20),
+            _buildInputField(
+              hintText: "Apellidos",
+              icon: Icons.person_outline,
+            ),
+            const SizedBox(height: 20),
+            _buildInputField(
+              hintText: "Identificación",
+              icon: Icons.badge_outlined,
+            ),
+            const SizedBox(height: 20),
+            _buildInputField(
+              hintText: "Número de celular",
+              icon: Icons.phone_outlined,
+            ),
+            const SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/loginPage"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueAccent,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                padding: const EdgeInsets.symmetric(vertical: 16),
+              ),
+              child: const Center(
                 child: Text(
-                  "Registro",
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  "Registrar Usuario",
+                  style: TextStyle(fontSize: 16),
                 ),
               ),
-              const SizedBox(height: 20),
-              const InputGeneric(hintText: "Correo electrónico"),
-              const SizedBox(height: 10),
-              const InputGeneric(hintText: "Contraseña", ),
-              const SizedBox(height: 10),
-              const InputGeneric(hintText: "Nombre"),
-              const SizedBox(height: 10),
-              const InputGeneric(hintText: "Apellidos"),
-              const SizedBox(height: 10),
-              const InputGeneric(hintText: "Identificación"),
-              const SizedBox(height: 10),
-              const InputGeneric(hintText: "Número de celular"),
-              const SizedBox(height: 30),
-              ButtonGeneric(
-                onPressed: () => Navigator.pushNamed(context, "/loginPage"),
-                text: "Registrar Usuario",
-                color: Colors.blueAccent,
+            ),
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/vehicleRegister"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 222, 221, 221),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                padding: const EdgeInsets.symmetric(vertical: 16),
               ),
-              const SizedBox(height: 10),
-              ButtonGeneric(
-                onPressed: () => Navigator.pushNamed(context, "/vehicleRegister"),
-                color: Colors.grey,
-                text: "Registrar Vehículo",
+              child: const Center(
+                child: Text(
+                  "Registrar Vehículo",
+                  style: TextStyle(fontSize: 16),
+                ),
               ),
-              const SizedBox(height: 10),
-              ButtonGeneric(
-                onPressed: () => Navigator.pushNamed(context, "/homePage"),
-                text: "Salir",
-                color: Colors.redAccent,
+            ),
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, "/loginPage"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.redAccent,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                padding: const EdgeInsets.symmetric(vertical: 16),
               ),
-            ],
-          ),
+              child: const Center(
+                child: Text(
+                  "Salir",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+          ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildInputField({
+    required String hintText,
+    required IconData icon,
+    bool obscureText = false,
+  }) {
+    return TextField(
+      obscureText: obscureText,
+      decoration: InputDecoration(
+        hintText: hintText,
+        prefixIcon: Icon(icon, color: Colors.blueAccent),
+        filled: true,
+        fillColor: Colors.grey[100],
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide.none,
+        ),
+        contentPadding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
       ),
     );
   }

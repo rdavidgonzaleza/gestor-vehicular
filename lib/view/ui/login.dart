@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const SizedBox(height: 40),
-                  Image.asset('assets/icon.png', height: 100), // Logo centrado
+                  Image.asset('assets/logo.jpg', height: 100), // Logo centrado
                   const SizedBox(height: 20),
                   const Text(
                     "Bienvenido de nuevo",

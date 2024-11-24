@@ -70,13 +70,13 @@
    }, {
       "appName": "reading_view",
       "data": {
-         "blockList": [ "gisdvl-jrvoice2.jreast.co.jp", "jrvoice2.jreast.co.jp", "www.marriott.com", "www.eki-net.com", "service10.wanbishi.ne.jp", "eum-coral-saas.instana.io" ],
+         "blockList": [ "gisdvl-jrvoice2.jreast.co.jp", "jrvoice2.jreast.co.jp", "www.marriott.com", "www.eki-net.com", "service10.wanbishi.ne.jp", "eum-coral-saas.instana.io", "demo10.wanbishi.ne.jp" ],
          "textLengthThreshold": 40,
          "whiteList": [ "mip.shengxuxu.com" ]
       },
       "effectStrategy": "launch",
       "type": "normal",
-      "version": "1004"
+      "version": "1005"
    }, {
       "appId": "e54758ece3475afa1b2a65wsefd0db36",
       "appName": "ads_block",
@@ -328,5 +328,5 @@
       "type": "builtin",
       "version": "1001"
    } ],
-   "version": "202411140001"
+   "version": "202411220001"
 }

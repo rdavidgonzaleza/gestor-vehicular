@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-class BackgroundDefault extends StatelessWidget { //Fondo por defecto de la app
+class BackgroundDefault extends StatelessWidget {
   const BackgroundDefault({
     super.key,
     required this.child

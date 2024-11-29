@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 
-
-  class EventRegister extends StatelessWidget {
+class EventRegister extends StatelessWidget {
   const EventRegister({super.key});
 
   @override

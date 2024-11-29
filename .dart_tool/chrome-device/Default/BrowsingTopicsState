@@ -7,6 +7,7 @@
       "taxonomy_version": 0,
       "top_topics_and_observing_domains": [  ]
    }, {
+<<<<<<< HEAD
       "calculation_time": "13376711918720760",
       "config_version": 0,
       "model_version": "0",
@@ -15,6 +16,9 @@
       "top_topics_and_observing_domains": [  ]
    }, {
       "calculation_time": "13377317590825276",
+=======
+      "calculation_time": "13376711975176251",
+>>>>>>> 5031e0064e826cccb00179b80d81bae1814b89dd
       "config_version": 0,
       "model_version": "0",
       "padded_top_topics_start_index": 0,
@@ -22,5 +26,9 @@
       "top_topics_and_observing_domains": [  ]
    } ],
    "hex_encoded_hmac_key": "ED38AC674D2EECCE29E6543B79A1023903DD70324B0AF90154102D4C40D94971",
+<<<<<<< HEAD
    "next_scheduled_calculation_time": "13377922390825368"
+=======
+   "next_scheduled_calculation_time": "13377316775176355"
+>>>>>>> 5031e0064e826cccb00179b80d81bae1814b89dd
 }

@@ -1,4 +1,4 @@
-#Sun Nov 24 11:18:14 COT 2024
+#Thu Nov 28 19:25:14 COT 2024
 base.0=C\:\\Users\\E1504FA-NJ475W\\Documents\\gestor-vehicular\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\E1504FA-NJ475W\\Documents\\gestor-vehicular\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\E1504FA-NJ475W\\Documents\\gestor-vehicular\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

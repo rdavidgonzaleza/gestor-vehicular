@@ -29,3 +29,4 @@ com.example.gestor_vehiculo.app-merged_res-27 C:\Users\E1504FA-NJ475W\Documents\
 com.example.gestor_vehiculo.app-packaged_res-28 C:\Users\E1504FA-NJ475W\Documents\gestor-vehicular\build\file_picker\intermediates\packaged_res\debug
 com.example.gestor_vehiculo.app-packaged_res-29 C:\Users\E1504FA-NJ475W\Documents\gestor-vehicular\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
 com.example.gestor_vehiculo.app-packaged_res-30 C:\Users\E1504FA-NJ475W\Documents\gestor-vehicular\build\path_provider_android\intermediates\packaged_res\debug
+com.example.gestor_vehiculo.app-packaged_res-31 C:\Users\E1504FA-NJ475W\Documents\gestor-vehicular\build\permission_handler_android\intermediates\packaged_res\debug

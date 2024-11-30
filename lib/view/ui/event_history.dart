@@ -27,7 +27,7 @@ class _EventHistoryState extends State<EventHistory> {
       eventType: "Mantenimiento",
       date: "2024-11-01",
       description: "Revisión del sistema eléctrico",
-      documents: ["documento1.pdf", "documento2.docx"],
+      documents: ["Pieza.pdf", "documentos.docx"],
     ),
     Event(
       eventType: "Revisión",
@@ -41,22 +41,25 @@ class _EventHistoryState extends State<EventHistory> {
       description: "Renovación anual del soat",
       documents: ["Document_soat.pdf"],
     ),
+    Event(
+      eventType: "Alineación llantas",
+      date: "2025-05-02",
+      description: "Tengo que ir al tecnico a alinear las llantas",
+      documents: ["llantas.jpg"],
+    ),
   ];
 
-  // Función para eliminar un evento
   void deleteEvent(int index) {
     setState(() {
       events.removeAt(index);
     });
   }
 
-  // Función para editar un evento
   void editEvent(int index) {
-    // Redirigimos a la pantalla de registro de eventos, pasando los datos del evento a editar
     Navigator.pushNamed(
       context,
       "/eventRegister",
-      arguments: events[index],  // Pasamos el evento a la pantalla de registro
+      arguments: events[index],
     );
   }
 
@@ -102,12 +105,12 @@ class _EventHistoryState extends State<EventHistory> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
                     Expanded(
+                      flex: 2,
                       child: Text(
-                        "Tipo de Evento",
+                        "Tipo",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 16,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -118,29 +121,28 @@ class _EventHistoryState extends State<EventHistory> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 16,
                         ),
                         textAlign: TextAlign.center,
                       ),
                     ),
                     Expanded(
+                      flex: 2,
                       child: Text(
                         "Descripción",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 16,
                         ),
                         textAlign: TextAlign.center,
                       ),
                     ),
                     Expanded(
+                      flex: 2,
                       child: Text(
                         "Documentos",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 16,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -157,8 +159,8 @@ class _EventHistoryState extends State<EventHistory> {
                 itemBuilder: (context, index) {
                   final event = events[index];
                   return Container(
-                    padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                    margin: const EdgeInsets.only(bottom: 8),
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
@@ -170,71 +172,78 @@ class _EventHistoryState extends State<EventHistory> {
                         ),
                       ],
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(
-                          child: Text(
-                            event.eventType,
-                            textAlign: TextAlign.center,
-                          ),
+                        Row(
+                          children: [
+                            Expanded(
+                              flex: 2,
+                              child: Text(
+                                event.eventType,
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Expanded(
+                              child: Text(
+                                event.date,
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: Text(
+                                event.description,
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: event.documents.map((doc) {
+                                  return Text(
+                                    doc,
+                                    style: const TextStyle(fontSize: 12),
+                                  );
+                                }).toList(),
+                              ),
+                            ),
+                          ],
                         ),
-                        Expanded(
-                          child: Text(
-                            event.date,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        Expanded(
-                          child: Text(
-                            event.description,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: event.documents.map((doc) {
-                              return Text(
-                                doc, // Nombre del documento
-                                style: const TextStyle(fontSize: 12),
-                              );
-                            }).toList(),
-                          ),
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.edit, color: Colors.orange),
-                          onPressed: () => editEvent(index),
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.delete, color: Colors.red),
-                          onPressed: () => deleteEvent(index),
+                        const SizedBox(height: 10),
+                        // Botones de editar y eliminar
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            ElevatedButton.icon(
+                              onPressed: () => editEvent(index),
+                              icon: const Icon(Icons.edit, color: Colors.white),
+                              label: const Text("Editar"),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color.fromARGB(255, 236, 185, 107),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                            ),
+                            ElevatedButton.icon(
+                              onPressed: () => deleteEvent(index),
+                              icon: const Icon(Icons.delete, color: Colors.white),
+                              label: const Text("Eliminar"),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color.fromARGB(255, 238, 161, 155),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
                   );
                 },
-              ),
-              const SizedBox(height: 20),
-              // Botón de salir
-              Center(
-                child: ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, "/homePage"),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey[400],
-                    padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 30),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                  child: const Text(
-                    "Salir",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
               ),
             ],
           ),
@@ -243,4 +252,6 @@ class _EventHistoryState extends State<EventHistory> {
     );
   }
 }
+
+
 
